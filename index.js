@@ -1,6 +1,6 @@
 (function () {
 
-    const content = document.getElementById("message");
+    //const content = document.getElementById("message");
     //const send = document.getElementById("send");
     // const hide =  document.getElementById("hide");
     // const show =  document.getElementById("show");
@@ -39,7 +39,7 @@
             api.toggle();
         });
 
-        api.onHide = () => changeButtonsState();
+        //api.onHide = () => changeButtonsState();
 
     });
 
