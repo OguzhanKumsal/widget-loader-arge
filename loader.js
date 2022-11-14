@@ -22,7 +22,7 @@
                 {display: "block", opacity: 1, transform: "scale(1)"},
             ],
             {
-                duration: 500,
+                duration: 800,
             },
         );
         widgetStyle.overflow = "hidden";
