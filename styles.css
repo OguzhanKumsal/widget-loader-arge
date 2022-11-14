@@ -1,0 +1,27 @@
+.toggle-button {
+
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+    background-image: linear-gradient(135deg,#71b280,rgba(19,78,94,.92));
+    display: inline-block;
+    cursor: pointer;
+
+    /* box-shadow: 4px 4px 4px rgb(0 0 0 / 40%); */
+    border: 1px solid #03555e;
+}
+.toggle-button:hover {
+    transform: rotate(180deg);
+    transition-duration: 1s;
+}
+
+.toggle-div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 48px;
+    margin-right: 48px;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 40%);
+    border-radius: 50%;
+}
