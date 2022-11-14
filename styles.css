@@ -16,6 +16,11 @@
     transition-duration: 1s;
 }
 
+.toggle-button {
+    transform: rotate(0deg);
+    transition-duration: 1s;
+}
+
 .toggle-div {
     position: fixed;
     bottom: 0;
