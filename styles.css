@@ -1,31 +1,107 @@
-.toggle-button {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-
-    background-image: linear-gradient(135deg,#71b280,rgba(19,78,94,.92));
-    display: inline-block;
-    cursor: pointer;
-
-    /* box-shadow: 4px 4px 4px rgb(0 0 0 / 40%); */
-    border: 1px solid #03555e;
-}
-.toggle-button:hover {
-    transform: rotate(180deg);
-    transition-duration: 1s;
+.logoWrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  background-color: #fff;
+  border: 1px solid rgba(168, 159, 159, 0.5);
+  box-shadow: 4px 4px 14px rgba(3, 85, 94, 0.4);
+  border-radius: 50%;
 }
 
-.toggle-button {
-    transform: rotate(0deg);
-    transition-duration: 1s;
+.pathWrapper {
+  transition: 0.8s;
+  transform: rotate(0);
+  padding: 5px;
+  cursor: pointer;
 }
-
-.toggle-div {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 48px;
-    margin-right: 48px;
-    box-shadow: 4px 4px 4px rgb(0 0 0 / 40%);
-    border-radius: 50%;
+.pathWrapper:hover {
+  padding: 0;
+  width: 75px;
+  height: 75px;
+  transform: rotate(180deg);
 }
+.pathWrapper:hover .path1 {
+  -webkit-animation: path1 2s infinite;
+          animation: path1 2s infinite;
+}
+.pathWrapper:hover .path2 {
+  -webkit-animation: path2 2s infinite;
+          animation: path2 2s infinite;
+}
+.pathWrapper:hover .path3 {
+  -webkit-animation: path3 2s infinite;
+          animation: path3 2s infinite;
+}
+.pathWrapper:hover .path4 {
+  -webkit-animation: path4 2s infinite;
+          animation: path4 2s infinite;
+}
+@-webkit-keyframes path1 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(25%);
+  }
+}
+@keyframes path1 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(25%);
+  }
+}
+@-webkit-keyframes path2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+@keyframes path2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+@-webkit-keyframes path3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(25%);
+  }
+}
+@keyframes path3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(25%);
+  }
+}
+@-webkit-keyframes path4 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-25%);
+  }
+}
+@keyframes path4 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-25%);
+  }
+}/*# sourceMappingURL=styles.css.map */

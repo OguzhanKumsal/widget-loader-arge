@@ -1,3 +1,4 @@
+
 (() => {
 
     const script = document.currentScript;
@@ -9,11 +10,13 @@
         const widgetStyle = widget.style;
         widgetStyle.display = "none";
         widgetStyle.boxSizing = "border-box";
-        widgetStyle.width = "500px";
+        widgetStyle.maxWidth = "500px";
+        widgetStyle.width = "100%";
         widgetStyle.height = "647px";
         widgetStyle.position = "absolute";
         widgetStyle.top = "40px";
         widgetStyle.right = "40px";
+        widgetStyle.boxShadow = '0px 4px 4px rgba(0, 0, 0, 0.25)';
         widget.animate(
             [
                 // { width: "0px", height: "0px" },
@@ -99,7 +102,7 @@
 
             window.addEventListener("message", evt => {
 
-                if (evt.origin !== "http://localhost:3000") {
+                if (evt.origin !== "http://localhost:3001") {
                     return;
                 }
 
@@ -110,12 +113,12 @@
 
             });
 
-            iframe.contentWindow.postMessage({ greeting: greeting }, "http://localhost:3000");
+            iframe.contentWindow.postMessage({ greeting: greeting }, "http://localhost:3001");
             widgetStyle.display = "block";
         });
 
         const license = script.getAttribute("data-license");
-        const widgetUrl = `http://localhost:3000?license=${license}`;
+        const widgetUrl = `http://localhost:3001?license=${license}`;
 
         iframe.src = widgetUrl;
 
